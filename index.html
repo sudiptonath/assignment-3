@@ -21,6 +21,8 @@
                 'yellow-color': 'rgba(239, 218, 110, 1)',
                 'green-color': 'rgba(164, 218, 195, 1)',
                 'blue-color': 'rgba(119, 170, 234, 1)',
+                'span-2.5': 'span 2.5 / span 4',
+                'span-1.5': 'span 1.5 / span 4',
               }
             }
           }
@@ -67,7 +69,7 @@
 <!-- banner section -->
  <section class="md:container mx-auto text-center p-8 md:p-12 lg:p-16">
   <div class="flex justify-center mb-5"><img class="" src="./assets/banner.png" alt=""></div>
-  <h1 class="text-2xl md:text-5xl text-center md:text-left lg:text-7xl font-bold ">A barn house of this design has a striking appearance</h1>
+  <h1 class="text-2xl md:text-5xl text-center  lg:text-7xl font-bold ">A barn house of this design has a striking appearance</h1>
   <p class="text-gray-700 py-7 w-10/12 mx-auto">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
   <button class="bg-deep-color px-4 py-2 rounded-3xl">View Details<i class="fa-solid fa-arrow-right -rotate-45 bg-book-color p-2 rounded-full ml-2"></i></button>
   
@@ -78,9 +80,9 @@
      <main class=" bg-gray-100 ">
 <!-- about section -->
  <section class="mb-12 ">
-<div class="p-10 hidden lg:flex"><img src="./assets/Vector.png" alt=""></div>
+<div class="p-10 hidden lg:flex "><img src="./assets/Vector.png" alt=""></div>
 <!-- te&ima part -->
-<div class="md:container mx-auto lg:flex p-8 lg:p-3">
+<div class="md:container mx-auto lg:flex p-8  ">
 <!-- text-part -->
  <div class="flex-1">
   <button class="bg-white px-2 py-1 rounded-2xl"><i class="fa-solid fa-arrow-right  mr-2"></i>About Us</button>
@@ -89,7 +91,7 @@
     modern sophistication, featuring weathered wood, sleek metal accents.</p>
   <!-- first flex -->
    <div class="flex bg-white p-5  my-5  xl:my-7 lg:w-5/6 gap-4 rounded-xl">
-<div><img src="./assets/commercial.png" alt=""></div>
+<div><img class="" src="./assets/commercial.png" alt=""></div>
 <div>
   <h3 class="text-xl font-bold">Commercial</h3>
   <p class="">The barn house captivates with its blend of rustic charm and modern.</p>
@@ -106,7 +108,7 @@
    
  </div>
  <!-- image part -->
-<div><img class="w-full flex-1" src="./assets/Rectangle.png" alt=""></div>
+<div class=" flex-1 p-10"><img class="w-full " src="./assets/Rectangle.png" alt=""></div>
     <!-- . -->
 </div>
  </section>
@@ -172,72 +174,90 @@
 <h2 class="text-5xl font-bold my-5">Our Latest Portfolio</h2>
 <p class="lg:w-3/6 mx-auto text-gray-600">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
     </div>
-    <!-- start card section -->
-     <div class="md:container mx-auto grid lg:grid-cols-3">
-      <!-- first part -->
-    <div class="card card-side bg-base-100 shadow-xl p-5 col-span-2">
-      <!-- <figure> -->
-        <img
-          src="./assets/img1.png"
-          alt="Movie" />
-      <!-- </figure> -->
-      <div class="card-body">
-        <h2 class="card-title">Commercial</h2>
-        <p>The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .</p>
-        <div class="card-actions ">
-          <button class="bg-deep-color px-4 py-2 rounded-3xl">View Details<i class="fa-solid fa-arrow-right -rotate-45 bg-book-color p-2 rounded-full ml-2"></i></button>
+    <!-- card section -->
+    <div class="grid grid-cols-1 md:grid-cols-12 p-8 gap-5 md:container mx-auto">
+      <!-- === -->
+      <div
+        class="border border-1 border-gray-300 rounded-xl p-4 grid grid-cols-1 md:grid-cols-5 md:col-span-8 gap-4"
+      >
+        <div class="md:col-span-2">
+          <img
+            class="w-10/12 md:w-auto mx-auto mb-4 md:mb-0"
+            src="./assets/img1.png"
+            alt=""
+          />
+        </div>
+        <div class="md:col-span-3">
+          <h3 class="text-lg text-black font-bold">Commercial</h3>
+          <p class="text-sm text-gray-600 my-3">
+            The barn house captivates with its blend of rustic charm and
+            modern. The barn house captivates charm and modern .
+          </p>
+          <div class="cursor-pointer">
+            <a class="font-bold rounded-3xl"
+              >View Details
+              <i class="fa-solid fa-arrow-right -rotate-45 bg-book-color p-2 rounded-full ml-2"></i>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- second part -->
-     <div>
-      <img src="./assets/img2.png" alt="">
-     </div>
-     <!-- end -->
-     </div>
-   </section>
-   <!-- extra part -->
-   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
-    <!-- Card 1 -->
-    <div class="bg-white rounded-lg shadow-md overflow-hidden">
-        <img src="your-image-1.jpg" alt="House Image" class="w-full h-48 object-cover">
-        <div class="p-4">
-            <h3 class="text-lg font-semibold">Commercial</h3>
-            <p class="text-gray-500">The barn house captivates with its blend of rustic charm and modern.</p>
-            <a href="#" class="text-green-500 mt-4 inline-block">View Details</a>
+      <!-- === -->
+      <div
+        class="p-4 sm:block md:col-span-4 rounded-xl border border-gray-300  "
+      >
+        <img
+          class="w-10/12 md:w-auto mx-auto"
+          src="./assets/img2.png"
+          alt=""
+        />
+      </div>
+      <!-- === -->
+      <div
+        class="p-4 sm:block  md:col-span-3 rounded-xl border border-gray-300 "
+      >
+        <img
+          class="w-10/12 md:w-auto mx-auto"
+          src="./assets/img3.png"
+          alt=""
+        />
+      </div>
+      <!-- === -->
+      <div
+        class="border border-gray-300 block md:flex rounded-xl p-4 space-x-4 sm:block  md:col-span-6 "
+      >
+        <div>
+          <img
+            class="w-10/12 md:w-auto mx-auto mb-4 md:mb-0"
+            src="./assets/img4.png"
+            alt=""
+          />
         </div>
-    </div>
-
-    <!-- Card 2 -->
-    <div class="bg-white rounded-lg shadow-md overflow-hidden">
-        <img src="your-image-2.jpg" alt="House Image" class="w-full h-48 object-cover">
-        <div class="p-4">
-            <h3 class="text-lg font-semibold">Commercial</h3>
-            <p class="text-gray-500">The barn house captivates with its blend of rustic charm and modern.</p>
-            <a href="#" class="text-green-500 mt-4 inline-block">View Details</a>
+        <div>
+          <h3 class="text-lg text-black font-bold">Commercial</h3>
+          <p class="text-sm text-gray-600 my-3">
+            The barn house captivates with its blend of rustic
+          </p>
+          <div class="cursor-pointer">
+            <a class="font-bold rounded-3xl"
+              >View Details
+              <i class="fa-solid fa-arrow-right -rotate-45 bg-book-color p-2 rounded-full ml-2"></i>
+            </a>
+          </div>
         </div>
+      </div>
+      <!-- === -->
+      <div
+        class="p-4 sm:block md:col-span-3 rounded-xl border border-gray-300 "
+      >
+        <img
+          class="w-10/12 md:w-auto mx-auto"
+          src="./assets/img5.png"
+          alt=""
+        />
+      </div>
     </div>
-
-    <!-- Card 3 -->
-    <div class="bg-white rounded-lg shadow-md overflow-hidden">
-        <img src="your-image-3.jpg" alt="House Image" class="w-full h-48 object-cover">
-        <div class="p-4">
-            <h3 class="text-lg font-semibold">Commercial</h3>
-            <p class="text-gray-500">The barn house captivates with its blend of rustic charm and modern.</p>
-            <a href="#" class="text-green-500 mt-4 inline-block">View Details</a>
-        </div>
-    </div>
-
-    <!-- Card 4 -->
-    <div class="bg-white rounded-lg shadow-md overflow-hidden">
-        <img src="your-image-4.jpg" alt="House Image" class="w-full h-48 object-cover">
-        <div class="p-4">
-            <h3 class="text-lg font-semibold">Commercial</h3>
-            <p class="text-gray-500">The barn house captivates with its blend of rustic charm and modern.</p>
-            <a href="#" class="text-green-500 mt-4 inline-block">View Details</a>
-        </div>
-    </div>
-</div>
+    </section>
+   
    <!-- articles and news section -->
     <section class="p-12 lg:p-24">
       <!-- header -->
@@ -313,17 +333,21 @@
       <!-- table section -->
        <section class="bg-[url('/assets/bg.jpg')]  w-full bg-cover bg-center">
         <!-- head -->
-        <div class="text-center p-5 pt-20">
+        <div class="text-center p-5 md:p-10  pt-20">
           <button class="bg-deep-color px-4 py-1 rounded-2xl"><i class="fa-solid fa-arrow-right  mr-2"></i>Let’s Connect</button>
           <h2 class="text-2xl md:text-5xl font-bold my-5">Let’s Discuss Next Project</h2>
           <p class="lg:w-3/6 mx-auto text-gray-600">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
           <!-- table -->
-           <div class="md:container mx-auto grid grid-cols-1 lg:grid-cols-2  gap-5 p-5 lg:px-20 lg:pb-20 lg:pt-10">
-            <div ><input type="text" placeholder="First Name*" class="input input-bordered w-full rounded-full " /></div>
+           <div class="md:container mx-auto space-y-4  p-5 lg:px-20 lg:pb-20 lg:pt-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div ><input type="text" placeholder="First Name*" class="input input-bordered w-full rounded-full " /></div>
             <div><input type="text" placeholder="Last Name*" class="input input-bordered w-full rounded-full" /></div>
-            <div><input type="text" placeholder="Phone Number*" class="input input-bordered w-full rounded-full" /></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div><input type="text" placeholder="Phone Number*" class="input input-bordered w-full rounded-full" /></div>
             <div><input type="text" placeholder="Email Number*" class="input input-bordered w-full rounded-full" /></div>
-            <div class="col-span-2 "><textarea
+            </div>
+            <div class=" "><textarea
               placeholder="Write your message here"
               class="textarea textarea-bordered textarea-lg w-full rounded-2xl"></textarea></div>
             <div class="bg-book-color col-span-2 rounded-full p-2"><strong>Send Mail</strong><i class="fa-solid fa-arrow-right ml-2 rounded-full bg-black text-white p-2 -rotate-45"></i></div>
